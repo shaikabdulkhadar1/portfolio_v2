@@ -12,7 +12,7 @@ import AboutMe from "../Pages/AboutMe";
 import Education from "../Pages/Education";
 import Experience from "../Pages/Experience";
 import Projects from "../Pages/Projects";
-import ContactMe from "../Pages/COntactMe";
+import Contact from "../Pages/Contact";
 
 const tabs = [
   { id: "about", label: "About Me", icon: User },
@@ -36,7 +36,7 @@ const RightPane = () => {
       case "projects":
         return <Projects />;
       case "contact":
-        return <ContactMe />;
+        return <Contact />;
       default:
         return <AboutMe />;
     }
