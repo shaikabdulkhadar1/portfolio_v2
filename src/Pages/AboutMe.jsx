@@ -26,7 +26,7 @@ const AboutMe = () => {
         <motion.h1
           className="text-2xl font-league font-bold"
           initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.85, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
         >
           About Me
@@ -34,7 +34,7 @@ const AboutMe = () => {
         <motion.p
           className="font-league text-lg opacity-85 mt-2"
           initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.75, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.5 }}
         >
           I am a Computer Science graduate from the Class of 2021 and currently
@@ -56,7 +56,7 @@ const AboutMe = () => {
         <motion.h1
           className="text-2xl font-league font-bold"
           initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.85, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.6 }}
         >
           What I Can Do
@@ -64,7 +64,7 @@ const AboutMe = () => {
         <motion.p
           className="font-league text-lg opacity-85 mt-2"
           initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.75, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.7 }}
         >
           With a solid foundation in software development and a passion for
@@ -84,7 +84,7 @@ const AboutMe = () => {
         <motion.h1
           className="text-2xl font-league font-bold"
           initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.85, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.8 }}
         >
           Why Work with Me
@@ -92,7 +92,7 @@ const AboutMe = () => {
         <motion.div
           className="grid grid-cols-2 gap-2 mt-2"
           initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.75, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.9 }}
         >
           {whyWorkWithMeItems.map((item, index) => (

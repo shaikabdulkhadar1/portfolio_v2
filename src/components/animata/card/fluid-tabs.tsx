@@ -21,6 +21,7 @@ interface FluidTabsProps {
 const FluidTabs: React.FC<FluidTabsProps> = ({ tabs, onTabChange }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const [prevActiveTab, setPrevActiveTab] = useState(tabs[0].id);
+  const [touchedTab, setTouchedTab] = useState<string | null>(null);
 
   useEffect(() => {
     const activeTabContent = tabs.find((tab) => tab.id === activeTab)?.content;
@@ -56,7 +57,7 @@ const FluidTabs: React.FC<FluidTabsProps> = ({ tabs, onTabChange }) => {
               key={tab.id}
               className={`relative z-10 flex w-full items-center justify-center gap-1.5 px-5 py-3 text-sm font-bold transition-colors duration-300 ${
                 activeTab === tab.id ? "font-bold text-black" : "text-gray-500"
-              }`}
+              } ${touchedTab === tab.id ? "blur-sm" : ""}`}
               onClick={() => handleTabClick(tab.id)}
             >
               {tab.icon}
